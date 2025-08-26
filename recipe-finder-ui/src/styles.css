@@ -4,7 +4,7 @@
     --neutral-white-0: #FFFFFF;
     --neutral-teal-800: #395852;
     --neutral-blue-500: #697DDB;
-    --neutral-green-300: #E0E6E3;
+    --neutral-eggshell-300: #E0E6E3;
 }
 
 @font-face {
@@ -40,4 +40,8 @@
 @font-face {
     font-family: Nunito-sans;
     src: url(app/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+body {
+    background-color: var(--neutral-eggshell-300);
 }
