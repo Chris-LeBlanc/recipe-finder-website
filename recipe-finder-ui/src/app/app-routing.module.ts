@@ -5,10 +5,10 @@ import { DetailsComponent } from './components/details/details.component';
 import { IndexComponent } from './components/index/index.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/recipes', pathMatch: 'full' },
-  {path: 'recipes/about', component: AboutComponent },
-  {path: 'recipes/details:id', component: DetailsComponent },
-  {path: 'recipes/index', component: IndexComponent }
+  { path: '', redirectTo: 'recipes', pathMatch: 'full' }, 
+  { path: 'recipes/about', component: AboutComponent },
+  { path: 'recipes/details/:id', component: DetailsComponent },
+  { path: 'recipes/index', component: IndexComponent }
 ];
 
 @NgModule({
