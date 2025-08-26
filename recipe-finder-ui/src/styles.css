@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-orange-900: #FE9F6B;
+    --primary-teal-500: #163A34;
+    --neutral-white-0: #FFFFFF;
+    --neutral-teal-800: #395852;
+    --neutral-blue-500: #697DDB;
+    --neutral-green-300: #E0E6E3;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(app/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito-italic;
+    src: url(app/assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito-semi-bold;
+    src: url(app/assets/fonts/Nunito/static/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Nunito-bold;
+    src: url(app/assets/fonts/Nunito/static/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: Nunito-extra-bold;
+    src: url(app/assets/fonts/Nunito/static/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Nunito-sans-italic;
+    src: url(app/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito-sans;
+    src: url(app/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}

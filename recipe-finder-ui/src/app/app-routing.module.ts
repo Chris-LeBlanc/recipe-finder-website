@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { DetailsComponent } from './details/details.component';
-import { IndexComponent } from './index/index.component';
+import { AboutComponent } from './components/about/about.component';
+import { DetailsComponent } from './components/details/details.component';
+import { IndexComponent } from './components/index/index.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/recipes', pathMatch: 'full' },
