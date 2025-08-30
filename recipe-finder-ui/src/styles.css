@@ -7,41 +7,68 @@
     --neutral-eggshell-300: #E0E6E3;
 }
 
-@font-face {
-    font-family: Nunito;
-    src: url(app/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
-@font-face {
-    font-family: Nunito-italic;
-    src: url(app/assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: Nunito-semi-bold;
-    src: url(app/assets/fonts/Nunito/static/Nunito-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: Nunito-bold;
-    src: url(app/assets/fonts/Nunito/static/Nunito-Bold.ttf);
-}
-
-@font-face {
-    font-family: Nunito-extra-bold;
-    src: url(app/assets/fonts/Nunito/static/Nunito-ExtraBold.ttf);
-}
-
-@font-face {
-    font-family: Nunito-sans-italic;
-    src: url(app/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
-}
-
-@font-face {
-    font-family: Nunito-sans;
-    src: url(app/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
     background-color: var(--neutral-eggshell-300);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1rem;
+}
+
+main.heroContainer {
+    flex: 1;
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(app/static/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito-italic;
+    src: url(app/static/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito-semi-bold;
+    src: url(app/static/fonts/Nunito/static/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Nunito-bold;
+    src: url(app/static/fonts/Nunito/static/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: Nunito-extra-bold;
+    src: url(app/static/fonts/Nunito/static/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Nunito-sans-italic;
+    src: url(app/static/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito-sans;
+    src: url(app/static/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
 }
