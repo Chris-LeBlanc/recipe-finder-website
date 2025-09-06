@@ -53,3 +53,9 @@ router-outlet {
     padding: 1rem;
     box-sizing: border-box;
 }
+
+@media (max-width: 767px) {
+    input {
+        display: none;
+    }
+}

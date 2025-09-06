@@ -1,30 +1,51 @@
 <header>
-  <nav class="nabvar">
-    <div class="d-flex justify-content-around align-items-center p-3">
+  <nav class="navbar navbar-expand-md">
+    <div
+      class="container-fluid d-flex justify-content-between align-items-center p-3"
+    >
       <div>
         <img
           class="img-fluid"
           src="assets/images/logo.svg"
-          alt="primary-logo"
-        />
+          alt="primary-logo"/>
       </div>
-      <div class="d-flex gap-4">
-        <a
-          class="nav"
-          routerLink="/"
-          routerLinkActive="focus"
-          [routerLinkActiveOptions]="{ exact: true }"
-          >Home</a
-        >
-        <a class="nav" routerLink="/recipes/about" routerLinkActive="focus"
-          >About</a
-        >
-        <a class="nav" routerLink="/recipes/index" routerLinkActive="focus"
-          >Recipes</a
-        >
+      <button
+        class="navbar-toggler d-md-none"
+        type="button"
+        (click)="isMenuOpen = !isMenuOpen"
+        [attr.aria.expanded]="isMenuOpen"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse d-md-flex justify-content-center"
+        [ngClass]="{ 'show': isMenuOpen }"
+        id="navbarMenu"
+      >
+        <div class="d-flex flex-md-row flex-column gap-4 align-items-md-center">
+          <a
+            class="nav"
+            routerLink="/"
+            routerLinkActive="focus"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="isMenuOpen = false"
+            >Home</a
+          >
+          <a class="nav" routerLink="/recipes/about" routerLinkActive="focus" (click)="isMenuOpen = false"
+            >About</a
+          >
+          <a class="nav" routerLink="/recipes/index" routerLinkActive="focus" (click)="isMenuOpen = false"
+            >Recipes</a
+          >
+        </div>
       </div>
       <div>
-        <input class="btn btn-info" value="Browse Recipes" />
+        <input class="btn" value="Browse Recipes" />
       </div>
     </div>
   </nav>
